@@ -1,14 +1,18 @@
-<b>Projeto Final: Sistema de Acervo Pessoal de Livros <br></b>
+# Readme - O que você precisa saber
+
+## Sistema de Acervo Pessoal de Livros
+
 ![LibraryReadingGIF](https://github.com/user-attachments/assets/f21629c7-721f-4dd4-bea0-c8eb7dca8f4c)
 
+> Esse é o projeto final da disciplina Linguagem de Programação da Fatec - Arthur de Azevedo de Mogi Mirim
 
-1. Descrição do Sistema:
+## 1. Descrição do Sistema:
 
 Este projeto foi desenvolvido como trabalho final para a disciplina de Linguagem de Programação do curso de Tecnologia em Análise e Desenvolvimento de Sistemas da Fatec Arthur de Azevedo.
-O objetivo foi criar um sistema de linha de comando para gerenciar um acervo pessoal de livros, aplicando conceitos de estruturas de dados, manipulação de arquivos e boas práticas de desenvolvimento de software. 
+O objetivo foi criar um sistema de linha de comando para gerenciar um acervo pessoal de livros, aplicando conceitos de estruturas de dados, manipulação de arquivos e boas práticas de desenvolvimento de software.
 O programa permite cadastrar, alterar, consultar e listar livros, com todas as informações salvas de forma persistente em um arquivo de formato CSV.
 
-2. Funcionalidades Implementadas:
+## 2. Funcionalidades Implementadas:
 
 O sistema possui um menu principal que dá acesso às seguintes funcionalidades:
 
@@ -18,24 +22,25 @@ Alterar Cadastro de Livro: Permite modificar as informações de um livro já ex
 Buscar Livro: Realiza buscas no acervo por código ISBN, título ou autor.
 Listar Livros por Filtro: Permite filtrar a exibição dos livros por Gênero, Avaliação, Status ou Progresso de Leitura.
 
-3. Estrutura de Dados: Struct Livro
+## 3. Estrutura de Dados: Struct Livro
 
 A principal estrutura de dados utilizada para representar um livro no sistema é a struct Livro, definida da seguinte forma:
 
+```C
 typedef struct {
-    char codigoISBN[100];
-    char titulo[100];
-    char autor[100];
-    int genero;
-    int avaliacao;
-    float valor;
-    int status;
-    int progressoLeitura;
-    char observacoes[100];
+char codigoISBN[100];
+char titulo[100];
+char autor[100];
+int genero;<
+int avaliacao;
+float valor;
+int status;
+int progressoLeitura;
+char observacoes[100];
 } Livro;
+```
 
-
-4. Requisitos Técnicos Atendidos:
+## 4. Requisitos Técnicos Atendidos:
 
 O projeto foi desenvolvido atendendo aos seguintes requisitos técnicos definidos na especificação do trabalho:
 
@@ -45,7 +50,7 @@ O projeto foi desenvolvido atendendo aos seguintes requisitos técnicos definido
 - Modularização do Código: O código-fonte é organizado de forma modular em arquivos de cabeçalho (.h) e de implementação (.c), separando as definições, a lógica principal e as funções de manipulação de dados.
 - Tratamento de Erros de Arquivo: Foram implementadas verificações para erros durante a abertura, leitura e escrita do arquivo CSV, garantindo a consistência e a robustez do programa.
 
-5. Como Compilar e Executar:
+## 5. Como Compilar e Executar:
 
 Este README.md serve como guia de instruções do projeto, conforme solicitado.
 
@@ -53,18 +58,18 @@ Este README.md serve como guia de instruções do projeto, conforme solicitado.
 2.  Arquivos: Os arquivos 'main.c', 'acervopessoal.c' e 'acervopessoal.h' devem estar no mesmo diretório.
 3.  Compilação: Abra um terminal no diretório dos arquivos e execute o comando: gcc main.c acervopessoal.c -o acervo_pessoal
 4.  Execução: Para rodar o programa, use o comando correspondente ao seu sistema operacional:
-	Windows: .\acervo_pessoal.exe
-	Linux/macOS: ./acervo pessoal
+    > Windows: .\acervo_pessoal.exe<br>
+    > Linux/macOS: ./acervo pessoal
 5.  Para carregar o arquivo CSV, tenha-o salvo em alguma pasta do seu diretório e defina este caminho no arquivo de cabeçalho 'acervopessoal.h'. Verifique a edição do local de pasta de acordo com seu sistema operacional. Exemplo do Windows:
 
-	#define NOME_ARQUIVO "C:\\temp\\ws-clion\\AcervoPessoalLivros\\livros.csv" //Local e nome do arquivo
+> #define NOME_ARQUIVO <br>"C:\\temp\\ws-clion\\AcervoPessoalLivros\\livros.csv" //Local e nome do arquivo ```
 
-6. Ambiente de Desenvolvimento: 
+## 6. Ambiente de Desenvolvimento:
 
 CLion 2024.3.2
 Projeto desenvolvido e testado no compilador GCC (MinGW 64-bit) em ambiente Windows.
 
-7. Autores:👨‍🦰👨‍🦰👧👧👧👧
+## 7. Autores:👨‍🦰👨‍🦰👧👧👧👧
 
 Este projeto foi desenvolvido em equipe pelos seguintes alunos:
 
@@ -74,3 +79,6 @@ João Vitor Guimarães de Moraes da Silva<br>
 Marilia dos Santos Silva https://github.com/marilia141194 <br>
 Milena Acuio de Arruda https://github.com/MilenaAcuio <br>
 Millena Souza de Aguiar.
+
+<p>
+<img src="img\obrigada.png" alt="gato em biblioteca segurando placa de obrigada"></p>
